@@ -1,0 +1,55 @@
+:host {
+  .map {
+    height: 100%;
+  }
+
+  .map-container {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .custom-marker {
+    position: relative;
+    text-align: center;
+  }
+
+  .marker-pin {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 50% 0;
+    background: #c30b82;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 0;
+    top: 0;
+    margin: -15px 0 0 -15px;
+  }
+
+  .marker-number {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    transform: rotate(45deg);
+    top: 5px;
+    left: 1px;
+  }
+
+  .marker-popup {
+    text-align: center;
+
+    .delete-btn {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: #ff4444;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+
+      &:hover {
+        background: #cc0000;
+      }
+    }
+  }
+}
